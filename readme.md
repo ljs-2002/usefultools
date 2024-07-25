@@ -9,7 +9,7 @@
     - [detail\_exception](#detail_exception)
     - [multi\_dispatch](#multi_dispatch)
 
-*** 安装依赖***
+***安装依赖***
 ```shell
 python -m pip install -r requirements.txt
 ```
