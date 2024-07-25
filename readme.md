@@ -9,10 +9,16 @@
     - [detail\_exception](#detail_exception)
     - [multi\_dispatch](#multi_dispatch)
 
+*** 安装依赖***
+```shell
+python -m pip install -r requirements.txt
+```
+
 ## 函数
 
 ### LOAD_ENV() & GET_ENV()
 将密码、APIKEY等敏感信息存放在环境变量中，通过`LOAD_ENV()`函数加载环境变量，通过`GET_ENV()`函数获取环境变量。
+
 ***使用方法：***
 1. 在项目根目录下新建`.env`文件，将敏感信息存放在其中，格式为`KEY=VALUE`。
 2. 在需要使用敏感信息的文件中，导入`LOAD_ENV`和`GET_ENV`函数。
@@ -27,6 +33,7 @@
 
 ### detail_exception
 让函数在发生异常时抛出的错误信息带有函数的名字。
+
 ***使用方法：***
 1. 导入`detail_exception`装饰器。
    ```python
@@ -42,6 +49,7 @@
 ### multi_dispatch
 根据所有参数的类型进行函数重载。
 整体设计参考functools.singledispatch。
+
 ***使用方法：***
 1. 导入`multi_dispatch`装饰器。
    ```python
